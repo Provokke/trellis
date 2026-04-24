@@ -136,3 +136,4 @@ object Evaluator:
     case "MIN" => flatten(args, values).flatMap(n => n.minOption.toRight(CellError.Type("MIN of nothing")))
     case "MAX" => flatten(args, values).flatMap(n => n.maxOption.toRight(CellError.Type("MAX of nothing")))
     case other => Left(CellError.Type(s"unknown function $other"))
+
