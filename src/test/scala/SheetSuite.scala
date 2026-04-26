@@ -96,3 +96,4 @@ class SheetSuite extends munit.FunSuite:
     val s = sheet("A1" -> "1.5", "B1" -> "=A1*2", "C1" -> "=1/0")
     assertEquals(s.display, Map("A1" -> "1.5", "B1" -> "3", "C1" -> "#DivByZero"))
   }
+
