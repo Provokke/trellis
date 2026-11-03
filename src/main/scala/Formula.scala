@@ -158,4 +158,3 @@ object Parser:
           case _ => Left(CellError.Parse("expected ',' or ')' in argument list"))
         }
       loop(Nil, tokens)
-
